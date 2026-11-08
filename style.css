@@ -40,6 +40,18 @@ footer {
 header {
     padding-top: 64px;
     padding-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.avatar {
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--rule);
 }
 
 h1 {
@@ -142,6 +154,14 @@ li {
 @media (max-width: 520px) {
     header {
         padding-top: 40px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .avatar {
+        width: 96px;
+        height: 96px;
     }
 
     .skills {
